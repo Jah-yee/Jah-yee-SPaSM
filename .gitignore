@@ -1,0 +1,6 @@
+curobo/
+cutamp/
+__pycache__/
+*.npy
+*.png
+*.npz
