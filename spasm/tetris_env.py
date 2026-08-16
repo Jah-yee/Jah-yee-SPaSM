@@ -182,8 +182,8 @@ class Simulation:
         assert jnp.isclose(L_block_z, O_block_z).all(), "Block z offsets should be the same."
         self.block_z = L_block_z # Global Z to grasp blocks
 
-        all_block_spheres = [O_sphs, L_sphs, O_sphs, O_sphs, O_sphs,
-                             L_sphs, L_sphs, L_sphs] #, L_sphs, L_sphs]
+        all_block_spheres = [O_sphs, O_sphs, O_sphs, L_sphs, L_sphs,
+                             L_sphs, L_sphs, O_sphs] #, L_sphs, L_sphs]
         # self.block_colors = [[255, 255, 186], [255, 186, 201], [186, 201, 255], [186, 255, 201], [102, 186, 232],
         #                      [255, 255, 186], [255, 186, 201], [186, 201, 255],]
         self.block_colors = [0xe81416, 0xffa500, 0xfaeb36, 0x79c314, 0x487de7, 0x87369d, 0x5eb40d, 0xffa500]
